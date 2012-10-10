@@ -27,7 +27,15 @@ describe 'Static pages' do
   end
 
   it "Should have the right title" do
-    visit '/static_pages/home'
-    page.should have_selector('title', text: "Ruby on Rails Tutorial Sample App")
+    visit '/static_pages/about'
+    page.should have_selector('title', text: "About Us")
   end
+
+  describe "Contact Page" do
+
+    it "Should have content 'Contact Us'" do
+    visit '/static_pages/contact'
+    page.should have_selector('title', text: "Contact")
+  end
+end
 end
