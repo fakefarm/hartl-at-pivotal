@@ -18,6 +18,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'annotate', '2.5.0', group: :development
+
 gem 'jquery-rails'
 gem "haml-rails", "~> 0.3.5"
 gem 'haml'
