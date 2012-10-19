@@ -3,9 +3,12 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 gem 'bootstrap-sass'
 
+
+
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'
+  gem 'quiet_assets'
 end
 
 group :production do
