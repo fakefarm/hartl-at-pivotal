@@ -1,6 +1,6 @@
 .center.hero-unit
   %h1 Sample App
   %h2 A Sample App about Ruby in Boulder. This is the home page for the #{ link_to "Ruby On Rails Tutorial", "http://railstutorial.org" } sample application.
-  .btn.btn-large.btn-primary= link_to "Sign up now!", signup_path
+  = link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary"
 
 =link_to image_tag("rails.png"), 'http://rubyonrails.org'
